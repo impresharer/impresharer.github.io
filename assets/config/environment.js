@@ -1,4 +1,4 @@
-module.exports = function(environment) {
+$.exports = function(environment) {
   var ENV = {
     contentSecurityPolicy: {
       'default-src': "'none'",
@@ -8,5 +8,6 @@ module.exports = function(environment) {
       'img-src': "'self' www.facebook.com p.typekit.net",
       'style-src': "'self' 'unsafe-inline' use.typekit.net",
       'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com"
-    },
+	  }
+  }
 };
