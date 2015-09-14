@@ -17,8 +17,8 @@
           "_name": "menu",
           "_anchor": "menu-0",
           "_params": {
-            "logo": true,
-            "showBrand": true
+            "logo": false,
+            "showBrand": false
           },
           "logo": "{PROJECT_IMAGES}logo127x128_196.png",
           "brand": "<a data-app-btn=\"true\" href=\"index.html\" class=\"text-white\">ImpreSharer</a>",
