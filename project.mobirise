@@ -21,7 +21,7 @@
             "showBrand": true
           },
           "logo": "{PROJECT_IMAGES}logo127x128_196.png",
-          "brand": "<a data-app-btn=\"true\" href=\"impresharer.com\" class=\"text-white\">ImpreSharer</a>",
+          "brand": "<a data-app-btn=\"true\" href=\"index.html\" class=\"text-white\">ImpreSharer</a>",
           "items": "<ul class=\"nav nav-pills pull-right\"><li><a href=\"index.html\" data-app-btn=\"true\" class=\"mbr-menu-item text-white\">HOME</a></li></ul>"
         },
         {
