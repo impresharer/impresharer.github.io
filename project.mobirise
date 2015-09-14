@@ -22,11 +22,19 @@
           },
           "logo": "{PROJECT_IMAGES}logo127x128_196.png",
           "brand": "<a data-app-btn=\"true\" href=\"impresharer.com\" class=\"text-white\">ImpreSharer</a>",
-          "items": "<ul class=\"nav nav-pills pull-right\"><li><a href=\"http://mobirise.com\" data-app-btn=\"true\" class=\"mbr-menu-item text-white\">\u001bHOME</a></li><li><a href=\"http://mobirise.com\" data-app-btn=\"true\" class=\"mbr-menu-item text-white\">ABOUT</a></li><li><a href=\"http://mobirise.com\" data-app-btn=\"true\" class=\"mbr-menu-item text-white\">CONTACT</a></li></ul>"
+          "items": "<ul class=\"nav nav-pills pull-right\"><li><a href=\"index.html\" data-app-btn=\"true\" class=\"mbr-menu-item text-white\">HOME</a></li></ul>"
         },
         {
           "_plugins": "AnimateCSS",
           "_name": "header1",
+          "_styles": {
+            ".btn": {
+              "font-size": "20px"
+            },
+            "P": {
+              "color": "#ffffff"
+            }
+          },
           "_anchor": "header1-1",
           "_params": {
             "parallax": true,
@@ -48,16 +56,39 @@
             "showArrow": false
           },
           "title": "ImpreSharer",
-          "text": "Create impressions, share experience!",
-          "buttons": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default animated fadeInUp delay\" href=\"#bottom\">Know more!</a>",
+          "text": "Share impressions, create experiences!",
+          "buttons": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default animated fadeInUp delay\" href=\"#bottom\">\u001bKnow more!</a>"
+        },
+        {
           "_styles": {
-            ".btn": {
-              "font-size": "20px"
+            ".caption h3": {
+              "color": "#fff"
             },
             "P": {
-              "color": "#ffffff"
+              "color": "#fff",
+              "text-align": "center"
             }
-          }
+          },
+          "_name": "content5",
+          "_anchor": "content5-6",
+          "_params": {
+            "bgImageRadio": true,
+            "parallax": true,
+            "bgImage": "{PROJECT_IMAGES}bg3.jpg",
+            "bgColor": "#fff",
+            "bgColorRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": 0.6,
+            "overlayColor": "#28324e",
+            "showTitle": true,
+            "showCaption": true
+          },
+          "title": "Share impressions, create experiences with ImpreSharer!",
+          "caption": "<p>Are you a true passionate traveller and exlorer? </p><p>With ImpreSharer you will be able to record your journeys creating fantastic fancy blogposts and share them with your folks with a single click!</p>"
         },
         {
           "_name": "form2",
@@ -75,27 +106,6 @@
           },
           "title": "Become our first premium customer for FREE!",
           "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"mbr-buttons__btn btn btn-lg btn-danger\">SUBSCRIBE</a>"
-        },
-        {
-          "_plugins": "Socicon,SocialLikes",
-          "_name": "social-buttons1",
-          "_anchor": "social-buttons1-4",
-          "_params": {
-            "bgImageRadio": false,
-            "parallax": true,
-            "bgImage": "{PROJECT_IMAGES}bg3.jpg",
-            "bgColor": "#fff",
-            "bgColorRadio": true,
-            "overlay": false,
-            "overlayOpacity": 0.5,
-            "overlayColor": "#222",
-            "inverse": false,
-            "counters": true,
-            "facebook": true,
-            "twitter": true,
-            "google": true
-          },
-          "text": "SHARE THIS PAGE!"
         }
       ]
     },
