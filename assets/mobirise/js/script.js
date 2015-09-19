@@ -11,6 +11,28 @@
         return this.find(selector).addBack(selector);
     };
 
+    $('#btnSubmitBottom').click(function(){
+        $('#btnSubmitBottom').disabled = true;
+        var val = $('#emailInputBottom')[0].value;
+        $('#emailResponseBottom').html('<img src="assets/images/ajax-loader.gif" border="0" />').css('backgroundColor', 'ffffd0');
+        $.getJSON('http://btoy.ddns.net:83/store-e-mail.php',{email: val}, function(data){
+            if (!data.result) {
+                $('#emailResponseBottom').html(data.message).css('backgroundColor','ff9999');
+            } else {
+                $('#emailResponseBottom').html(data.message).css('backgroundColor','99ff99');
+            }
+        });
+        $('#btnSubmitBottom').disabled = false;
+        return false;
+    });
+    $('#emailInputBottom').keyup(function(e) {
+        if(e.keyCode == 13) {
+            $('#btnSubmitBottom').click();
+    }
+    return false;
+    });
+
+
     (function(){
         
         var scrollbarWidth = 0, originalMargin, touchHandler = function(event){
@@ -448,7 +470,7 @@
 
 })(jQuery);
 !function() {
-	document.getElementsByClassName('engine')[0].getElementsByTagName('a')[0].removeAttribute('rel');
+    document.getElementsByClassName('engine')[0].getElementsByTagName('a')[0].removeAttribute('rel');
 
     if(!document.getElementById('top-1')) {
         var e = document.createElement("section");
