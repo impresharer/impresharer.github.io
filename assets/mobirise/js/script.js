@@ -14,7 +14,7 @@
     $('#btnSubmitBottom').click(function(){
         $('#btnSubmitBottom').disabled = true;
         var val = $('#emailInputBottom')[0].value;
-        $('#emailResponseBottom').html('<img src="assets/images/ajax-loader.gif" border="0" />').css('backgroundColor', 'ffffd0');
+        $('#emailResponseBottom').html('<img src="assets/images/ajax-loader.gif" border="0" height="40px" />').css('backgroundColor', 'ffffd0');
         $.getJSON('http://btoy.ddns.net:83/store-e-mail.php',{email: val}, function(data){
             if (!data.result) {
                 $('#emailResponseBottom').html(data.message).css('backgroundColor','ff9999');
